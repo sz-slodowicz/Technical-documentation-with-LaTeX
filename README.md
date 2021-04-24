@@ -5,6 +5,6 @@ The book that will be used for the LaTeX part of this course is Datta, Dillip. 2
 Additional sources used in the course is <https://en.wikibooks.org/wiki/LaTeX> and <https://de.overleaf.com/learn>
 # Examples and Excercises
 Examples discussed in each session are provided in separate folders.
-# 
+# Software Requirements
 For Windows users the MiKTeX distribution is recommended. 
-TeXStu
+TeXStudio is used as editor in all examples in the presentaiton.
