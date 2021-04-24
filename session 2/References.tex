@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+\usepackage{blindtext}
+%\usepackage[pdfborderstyle={/S/U/W 0}]{hyperref} no color indication of references 
+%See https://texwelt.de/fragen/1121/wie-entferne-ich-die-roten-rahmen-um-hyperlinks
+\usepackage{hyperref}
+
+\begin{document}
+\section{Introduction}
+%Creating a lable that will be used for referencing
+\label{sec:introduction}
+\blindtext
+\section{Data}
+\label{sec:data}
+\blindtext
+\section{Analysis}
+\label{sec:analysis}
+\blindtext
+\section{References}
+%Refering to a lable
+For the description of data see section \ref{sec:data}.\\
+%Refering to a URL
+For the details on hyperref package refer to  \href{https://ctan.org/pkg/hyperref?lang=de}{documentation of the hyperref} package.\\
+%Refering to the page of the lable
+Refer to the introduction on page \pageref{sec:analysis}.
+\end{document}

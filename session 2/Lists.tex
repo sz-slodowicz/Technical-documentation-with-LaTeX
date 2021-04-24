@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{enumitem}
+
+\begin{document}
+
+%environment itemize
+\begin{itemize}
+	\item Apples 
+	\item Oranges
+	\item Bananas
+\end{itemize}
+
+%environment itemize with another itemize embedded
+\begin{itemize}
+		\item Apples
+		\begin{itemize}
+			\item Antonovka
+			\item Auksis
+			\item Bismarck 
+		\end{itemize}
+		\item Oranges
+		\item Bananas
+	\end{itemize}
+
+%environment enumerate
+	\begin{enumerate}
+		\item Apples
+		\item Oranges
+		\item Bananas
+	\end{enumerate}
+
+
+% environment enumerate with another enumerate embedded
+	\begin{enumerate}
+	\item Apples
+	\begin{enumerate}
+		\item Antonovka
+		\item Auksis
+		\item Bismarck
+	\end{enumerate}
+	\item Oranges
+	\item Bananas
+\end{enumerate}
+
+
+%changing the enumerator with the enumitem package
+\begin{enumerate}[label=\Alph*]
+	\item Apples
+	\item Oranges
+	\item Bananas
+\end{enumerate}
+
+\end{document}

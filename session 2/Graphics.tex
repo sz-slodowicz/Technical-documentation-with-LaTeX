@@ -1,0 +1,17 @@
+\documentclass[12pt]{article}
+\usepackage{blindtext}
+\usepackage{graphicx}
+\begin{document}
+\blindtext
+%Using a graphic within a figure environment with the graphicx package
+\begin{figure}[h]
+	\begin{center}
+	\includegraphics{Donald.png}
+	\end{center}
+\caption{Donald Duck}
+\end{figure}
+\blindtext
+
+%Inline graphic with the graphicx package. The height is  
+This is an example of an inline graphic \includegraphics[height=0.6\baselineskip]{Donald.png}.The height of the graphic is 60\% of the vertical distance between lines.
+\end{document}
