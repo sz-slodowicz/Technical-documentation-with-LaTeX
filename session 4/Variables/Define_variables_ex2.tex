@@ -1,0 +1,99 @@
+\documentclass[oneside]{book}
+\usepackage{geometry}  		
+\usepackage{blindtext} 		
+\usepackage{graphicx}  		
+\usepackage{wrapfig}   		 
+\setlength\parindent{0pt}	
+\usepackage{fancyhdr}		
+\pagestyle{fancy}			
+\usepackage{datetime2}		
+\usepackage{titlesec}		
+
+%custom formatting of chapter and section
+\titleformat{\chapter}[display]{\bfseries\Large}{}{0pt}{\raggedleft}[\vspace{-0.5ex}\rule{\textwidth}{2pt}]
+
+\titleformat{\section}[runin]{\large\bfseries}{\thesection}{0.5ex}{}[]
+
+
+
+\renewcommand{\headrulewidth}{0.5pt} % change the header rule width
+\renewcommand{\familydefault}{\sfdefault} % sans serif as default font typeface
+
+
+\graphicspath{ {./V1/} } % path to images folder
+
+% new commands for variables
+\newcommand{\productname}{\uppercase{\textbf{XYZ-1234}}}
+\newcommand{\manufacturer}{\uppercase{\textbf{acme corporation}}}
+\newcommand{\documentid}{\uppercase{\textbf{ABC 123456-1}}}
+\newcommand{\publicationtype}{\uppercase{\textbf{user guide}}}
+\newcommand{\publicationdate}{\uppercase{\textbf{\today}}}
+
+%custom formatting of header and footer
+\lhead{\publicationtype}\chead{}\rhead{\productname}
+\lfoot{\documentid}\cfoot{}\rfoot{\publicationdate}
+
+\begin{document}
+	\begin{titlepage}
+		\begin{flushright}
+			\includegraphics[width=3cm]{Acme-corp.png}
+		\end{flushright}
+		\vfil
+		\begin{center}
+			\includegraphics[width=10cm]{wireframe.png}
+		\end{center}
+		\vfil
+		\Huge
+		\productname \\
+		\rule{\textwidth}{1pt}
+		\Large
+		Product version A, product version B, $\ldots$\\
+		\rule{\textwidth}{1pt}\\[0.5em]
+		\begin{minipage}{0.5\textwidth}
+			\begin{itemize}
+				\item Feature A
+				\item Feature B
+			\end{itemize}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.5\textwidth}
+			\begin{flushright}
+				\begin{itemize}
+					\item Feature D
+					\item Feature E
+				\end{itemize}
+			\end{flushright}
+		\end{minipage}
+		\\[0.5em]
+		\rule{\textwidth}{1pt}\\[0.5em]
+		\begin{minipage}{0.5\textwidth}
+			\begin{flushleft}
+				\documentid\\
+				\publicationdate
+			\end{flushleft}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.5\textwidth}
+			\begin{flushright}
+				\manufacturer\\ 
+				\publicationtype
+			\end{flushright}		
+		\end{minipage}
+	\end{titlepage}
+
+\chapter{Intended use of \productname}
+\blindtext
+\begin{wrapfigure}{l}{0.25\textwidth}
+	\centering
+		\includegraphics[width=0.25\textwidth]{wireframe.png}
+\end{wrapfigure}
+\blindtext[4]
+\chapter{Comissioning of \productname}
+\blindtext[4]
+\chapter{Storage conditions for \productname}
+\blindtext[4]
+\chapter{Transportation of \productname}
+\blindtext[4]
+\chapter{Decomissioning of \productname}
+\blindtext[4]
+\end{document}

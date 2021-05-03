@@ -1,0 +1,9 @@
+%custom formatting of chapter and section
+\titleformat{\chapter}[display]{\bfseries\Large}{}{0pt}{\raggedleft}[\vspace{-0.5ex}\rule{\textwidth}{2pt}]
+\titleformat{\section}[runin]{\large\bfseries}{\thesection}{0.5ex}{}[]
+%custom formatting of header and footer
+\lhead{\publicationtype}\chead{}\rhead{\productname}
+\lfoot{\documentid}\cfoot{}\rfoot{\publicationdate}
+
+\renewcommand{\headrulewidth}{0.5pt} % change the header rule width
+\renewcommand{\familydefault}{\sfdefault} % sans serif as default font typeface

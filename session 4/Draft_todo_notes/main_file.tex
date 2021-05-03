@@ -1,0 +1,26 @@
+\documentclass[oneside]{book}
+\usepackage{geometry}  		%page geometry settings
+\usepackage{blindtext} 		%blidtext generator
+\usepackage{graphicx}  		%include graphics
+\usepackage{wrapfig}   		% 
+\setlength\parindent{0pt}	%remove indent
+\usepackage{fancyhdr}		%custom header and footer
+\pagestyle{fancy}			%style for fancyhdr
+\usepackage{datetime2}		%Date/time formatting
+\usepackage{titlesec}		%custom chapter/section/ titles
+\usepackage{subfiles}		%import content from external files
+\usepackage{todonotes}		%todonotes
+\usepackage{draftwatermark}	%water mark
+
+\graphicspath{ {./V1/} } 	% path to images folder
+\input{variables.tex}		%file with variables
+\input{formatting.tex}		%file with formatting 
+
+\begin{document}
+	\listoftodos
+\subfile{titlepage}
+\chapter{Intended use of \productname}
+\subfile{comissioning}
+\subfile{decomissioning}
+
+\end{document}
