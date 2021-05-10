@@ -1,0 +1,33 @@
+\documentclass[]{article}
+\usepackage{blindtext, tikz, xstring, setspace}
+\usetikzlibrary{shapes.geometric}
+\usepackage[english]{babel}
+\usepackage{safetymessages}
+
+\begin{document}
+
+\begin{safetymessage}{d}{Type and source of danger}{Possible consequences}
+\item Countermeasure
+\item Countermeasure
+\end{safetymessage}
+\begin{safetymessage}{c}{Type and source of danger}{Possible consequences}
+	\item Countermeasure
+	\item Countermeasure
+\end{safetymessage}
+\begin{safetymessage}{w}{Type and source of danger}{Possible consequences}
+	\item Countermeasure
+	\item Countermeasure
+\end{safetymessage}
+
+\newpage
+\begin{safetymessage}
+	{d}
+	{Sicherheitsmängel durch falsche Zubehör- und Ersatzteile}
+	{Zubehör und Ersatzteile, die nicht vom Hersteller, empfohlen sind beeinträchtigen die Sicherheit, Funktion und Präzision des Geräts. Für Schäden, dir durch nichtempfohlene Zubehör- und Ersatzteile oder unsachgemässen Gebrauch verursacht werden, wird jede Gewährleistung und Haftung durch Hersteller ausgeschlossen.}
+	\item Verwenden Sie ausschliesslich vom Hersteller empfohlenes Zubehör und Original-Ersatzteile 
+	Text
+\end{safetymessage}
+\blindtext
+\safetymessageinline{w}{Verwenden Sie ausschliesslich vom Hersteller empfohlenes Zubehör und Original-Ersatzteile}
+\blindtext
+\end{document}

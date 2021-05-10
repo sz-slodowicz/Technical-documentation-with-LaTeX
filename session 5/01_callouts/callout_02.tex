@@ -1,0 +1,29 @@
+
+\documentclass[]{article}
+\usepackage[text= black, background=white, arrow=red]{callouts}
+\usepackage{todonotes}
+\usepackage{tcolorbox}
+
+
+\begin{document}
+
+\newcommand{\1}{\tcbox[size=small,on line, opacityframe=1]{1}}
+\newcommand{\2}{\tcbox[size=small,on line, opacityframe=1]{2}}
+\newcommand{\3}{\tcbox[size=small,on line, opacityframe=1]{3}}
+\newcommand{\4}{\tcbox[size=small,on line, opacityframe=1]{4}}
+\newcommand{\5}{\tcbox[size=small,on line, opacityframe=1]{5}}
+\newcommand{\6}{\tcbox[size=small,on line, opacityframe=1]{6}}
+\begin{annotate}
+	{\includegraphics[width=\textwidth]{valve_trumpet}}{0.5}
+	\callout{-9 , 6}{ \1 }{-8 , 3}
+	\callout{2 , 6}{ \2 }{2 , 4}
+	\callout{12 , 6}{ \3 }{11 , 3}
+	\callout{12, -6}{\4}{8, -4.5	}
+	\callout{2, -6}{\5}{2, -5}
+	\callout{-9, -6}{\6}{-5, -4}
+	%\note{1, 2}{Text}
+	%\arrow{2,3}{5,5}
+	%\helpgrid[gray]
+\end{annotate}
+
+\end{document}

@@ -1,0 +1,22 @@
+\documentclass[11pt]{article}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+
+\begin{document}
+\lstset{backgroundcolor=\color{lightgray}, numbers=left, language=Python}
+\section*{code snippet}
+\lstinline[backgroundcolor=\color{lightgray}]$print("Hello world!")$
+
+\section*{Code block}
+\begin{lstlisting}[frame=single]
+def function(name):
+	print("Hello %s" (name))
+\end{lstlisting}
+
+
+\section*{Import of external file}
+\lstinputlisting[frame=single]{script.py}
+
+\end{document}
+

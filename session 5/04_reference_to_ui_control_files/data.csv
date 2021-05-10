@@ -1,0 +1,9 @@
+ID;Text
+Cancel_confirmation_header;Cancel process confirmation dialog
+Cancel_confirmation_question;Do you really want to cancel the process?
+Cancel_confirmation_more_information;More information
+Cancel_confirmation_cancel_button;Cancel
+Cancel_confirmation_continue_button;Continue
+AdminConsole_ProcessOverview; Process overview
+AdminConcole_AbortProcess; Abort
+AdminConsole_Running; Running processes
