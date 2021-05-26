@@ -1,0 +1,34 @@
+{
+    "abbrev": "",
+    "description": [
+        ""
+    ],
+    "formatVersion": 1,
+    "menu": "Folder",
+    "name": "07_latexdiff_vc_last_commit",
+    "shortcut": "",
+    "tag": [
+        "%SCRIPT",
+        "var openFileNameWithPath = editor.fileName()",
+        "var openFileName = openFileNameWithPath.substring(openFileNameWithPath.lastIndexOf(\"/\") + 1);",
+        "var openFileDirectory=openFileNameWithPath.substring(0,openFileNameWithPath.lastIndexOf(\"/\"));",
+        "",
+        "var cmdstr = new String();",
+        "cmdstr = \"latexdiff-vc --git --force -r \" + openFileName;",
+        "var diffProc = system(\"cmd /C \"+cmdstr,openFileDirectory);",
+        "diffProc.waitForFinished();",
+        "app.fileOpen();",
+        "var diffFile = app.getCurrentFileName();",
+        "buildManager.runCommand(\"txs:///quick\", diffFile);",
+        "",
+        "delete(diffFile)",
+        "delete(openFileNameWithPath)",
+        "delete(openFileName)",
+        "delete(cmdstr)",
+        "delete(diffProc)",
+        "",
+        "",
+        ""
+    ],
+    "trigger": ""
+}

@@ -1,0 +1,17 @@
+{
+    "abbrev": "",
+    "description": [
+        ""
+    ],
+    "formatVersion": 1,
+    "menu": "Folder",
+    "name": "02_git_status",
+    "shortcut": "",
+    "tag": [
+        "%SCRIPT",
+        "buildManager.runCommand(\"git status > txs:///messages\", editor.fileName())",
+        "",
+        ""
+    ],
+    "trigger": ""
+}

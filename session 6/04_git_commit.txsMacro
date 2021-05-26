@@ -1,0 +1,20 @@
+{
+    "abbrev": "CMT",
+    "description": [
+        ""
+    ],
+    "formatVersion": 1,
+    "menu": "Folder",
+    "name": "02_git_commit",
+    "shortcut": "",
+    "tag": [
+        "%SCRIPT",
+        "dialog = new UniversalInputDialog() ",
+        "dialog.setWindowTitle(\"Git commit / push\") ",
+        "dialog.add(\"Commited by Author X\", \"Comment\", \"comment\") ",
+        "if (dialog.exec() != null) {",
+        "     comment = dialog.get(\"comment\")",
+        "     buildManager.runCommand(\"git commit -a -m \\\"\" + comment + \"\\\"\", editor.fileName())}"
+    ],
+    "trigger": ""
+}

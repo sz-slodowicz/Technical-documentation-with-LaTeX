@@ -1,0 +1,16 @@
+{
+    "abbrev": "",
+    "description": [
+        ""
+    ],
+    "formatVersion": 1,
+    "menu": "Folder",
+    "name": "05_git_log",
+    "shortcut": "",
+    "tag": [
+        "%SCRIPT",
+        "buildManager.runCommand(\"git log --oneline> txs:///messages\", editor.fileName())",
+        ""
+    ],
+    "trigger": ""
+}

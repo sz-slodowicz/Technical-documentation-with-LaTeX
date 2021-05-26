@@ -1,0 +1,16 @@
+{
+    "abbrev": "",
+    "description": [
+        ""
+    ],
+    "formatVersion": 1,
+    "menu": "Folder",
+    "name": "06_git_diff",
+    "shortcut": "",
+    "tag": [
+        "%SCRIPT",
+        "buildManager.runCommand(\"git diff HEAD > txs:///messages\", editor.fileName())",
+        ""
+    ],
+    "trigger": ""
+}
