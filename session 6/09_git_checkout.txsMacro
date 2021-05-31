@@ -1,0 +1,20 @@
+{
+    "abbrev": "",
+    "description": [
+        ""
+    ],
+    "formatVersion": 1,
+    "menu": "GIT",
+    "name": "09_git_checkout_file",
+    "shortcut": "",
+    "tag": [
+        "%SCRIPT",
+        "dialog = new UniversalInputDialog() ",
+        "dialog.setWindowTitle(\"Git checkout\") ",
+        "dialog.add(\"XXXX\", \"Commit hash\", \"hash\") ",
+        "if (dialog.exec() != null) {",
+        "     hash = dialog.get(\"hash\")",
+        "     buildManager.runCommand(\"git checkout \\\"\" + hash + \"\\\"\", editor.fileName())}"
+    ],
+    "trigger": ""
+}
