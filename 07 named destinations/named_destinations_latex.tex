@@ -1,0 +1,23 @@
+\documentclass[]{article}
+%source: https://tex.stackexchange.com/questions/213860/how-to-generate-a-named-destination-in-pdf
+\usepackage{blindtext}
+\usepackage{hyperref}
+
+\usepackage{bookmark}
+\begin{document}
+
+\section{About this document}
+\blindtext[1]	
+\hypertarget{about_this_document}{}%
+%defining the named destination "about_this_document
+\section{Safety}
+\hypertarget{safety}{}%
+\blindtext[10]
+\section{Installation}
+\hypertarget{installation}{}
+\blindtext[10]
+\section{Commissioning}
+\hypertarget{commissioning}{}	
+\blindtext[5]	
+\end{document}
+%opening 
