@@ -1,0 +1,20 @@
+%https://tex.stackexchange.com/questions/75578/how-to-change-list-settings-globally
+\documentclass[12pt]{article}
+\usepackage{enumitem}
+\setlist[enumerate,1]{label=(\Roman*)} %Level 1
+\setlist[enumerate,2]{label=(\roman*)} %Level 2
+\begin{document}
+
+%environment itemize
+\begin{enumerate}
+	\item \begin{verbatim}\arabic*\end{verbatim}
+	\item \begin{verbatim}\roman*\end{verbatim}
+	\item \begin{verbatim}\alph*\end{verbatim}
+	\begin{enumerate}
+		\item \begin{verbatim}\Arabic*\end{verbatim}
+		\item \begin{verbatim}\Roman*\end{verbatim}
+		\item \begin{verbatim}\Alph*\end{verbatim}
+	\end{enumerate}
+\end{enumerate}
+
+\end{document}
