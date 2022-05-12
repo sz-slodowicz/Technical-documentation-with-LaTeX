@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.28)  2 MAY 2022 20:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.28)  5 MAY 2022 19:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -175,7 +175,7 @@ Chapter 5.
 ] (Define_variable.aux) ) 
 Here is how much of TeX's memory you used:
  2447 strings out of 478547
- 43114 string characters out of 2840419
+ 43126 string characters out of 2840419
  353243 words of memory out of 3000000
  20690 multiletter control sequences out of 15000+600000
  470472 words of font info for 32 fonts, out of 8000000 for 9000
@@ -184,7 +184,7 @@ Here is how much of TeX's memory you used:
 <C:/Users/z00425de/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/z00425de/AppData/Local/Programs/
 MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on Define_variable.pdf (5 pages, 39108 bytes).
+Output written on Define_variable.pdf (5 pages, 39781 bytes).
 PDF statistics:
  28 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
