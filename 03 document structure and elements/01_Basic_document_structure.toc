@@ -1,8 +1,0 @@
-\babel@toc {german}{}\relax 
-\contentsline {chapter}{\numberline {1}Noch ein Kapitel}{2}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Kapitel davor}{4}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Document structure}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Lists}{5}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Tables}{6}{subsection.3.1.1}%
-\contentsline {subsubsection}{References}{6}{section*.2}%
-\contentsline {paragraph}{References to URLs}{6}{section*.3}%
