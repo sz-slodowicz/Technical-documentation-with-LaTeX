@@ -1,0 +1,5 @@
+latexdiff Draft.tex Final.tex > diff.tex
+
+gitlatexdiff-vc --git --force -r main.tex 
+
+git latexdiff HEAD~1 --main main.tex --no-view --output out.pdf && start diff.pdf

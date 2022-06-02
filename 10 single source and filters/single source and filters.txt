@@ -1,0 +1,5 @@
+pdflatex single_source.tex --jobname p1 
+
+pdflatex single_source.tex --jobname p2
+
+pdflatex single_source.tex --jobname p3
